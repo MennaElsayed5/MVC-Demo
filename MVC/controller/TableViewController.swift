@@ -13,7 +13,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         result = []
         NetworkServ.fetchData{ [weak self] (result) in
-            print(result?.items[0].title ?? "ay haga")
+            print(result?.items[0].title ?? "title")
             self?.result = result?.items
         }
     }
